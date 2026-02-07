@@ -9,7 +9,7 @@ function Feed() {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const response = await axios.get("http://localhost:3000/getposts")
+                const response = await axios.get("https://image-gallery-nine-puce.vercel.app/getposts")
                 setPosts(response.data.data)
             } catch (error) {
                 console.error(error)

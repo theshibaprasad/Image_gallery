@@ -68,7 +68,7 @@ function CreatePost() {
     formData.append('caption', caption.trim())
 
     try {
-      const response = await fetch('http://localhost:3000/createpost', {
+      const response = await fetch('https://image-gallery-nine-puce.vercel.app/createpost', {
         method: 'POST',
         body: formData
       })
